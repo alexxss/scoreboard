@@ -83,7 +83,7 @@ public:
 
     }
 
-    void printIS(){ //¿é¥X³o±ø«ü¥OªºInstruction Status
+    void printIS(){ //Â¿Ã©Â¥XÂ³oÂ±Ã¸Â«Ã¼Â¥OÂªÂºInstruction Status
         cout<<"op="<<op<<", Fi="<<Fi<<", Fj="<<Fj<<", Fk="<<Fk<<endl;
     }
 };
@@ -334,7 +334,7 @@ int main(){
     print();
     /* -----cycle start---*/
 
-    for(int k = 0; k < 70; k++){
+    while(1){
         cycle++;/*
         write();
         exec();
@@ -345,6 +345,6 @@ int main(){
         exec();
         write();
         print();
-        if(WriteOrder.size()==0)break;
+        if(WriteOrder.size()==0 || cycle > 100)break;
     }
 }
